@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Swear Display';
+    src: url('SwearDisplay-MediumItalic.eot');
+    src: url('SwearDisplay-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('SwearDisplay-MediumItalic.woff2') format('woff2'),
+        url('SwearDisplay-MediumItalic.woff') format('woff'),
+        url('SwearDisplay-MediumItalic.ttf') format('truetype'),
+        url('SwearDisplay-MediumItalic.svg#SwearDisplay-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+

@@ -1,0 +1,18 @@
+
+> bestandlessbilnds@0.1.0 dev
+> next dev
+
+- info Loaded env from C:\Users\bindu\Documents\prod-bestandblinds\bestandlessblinds-main\bestandlessblinds-main\.env
+- [32mready[39m started server on [::]:3001, url: http://localhost:3001
+- [35mevent[39m compiled client and server successfully in 811 ms (20 modules)
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 282 ms (20 modules)
+- [36minfo[39m Loaded env from C:\Users\bindu\Documents\prod-bestandblinds\bestandlessblinds-main\bestandlessblinds-main\.env
+- [36minfo[39m Loaded env from C:\Users\bindu\Documents\prod-bestandblinds\bestandlessblinds-main\bestandlessblinds-main\.env
+- [36mwait[39m compiling /page (client and server)...
+- [35mevent[39m compiled client and server successfully in 9s (1231 modules)
+- [36mwait[39m compiling...
+- [35mevent[39m compiled successfully in 3s (658 modules)
+- [36mwait[39m compiling /favicon.ico/route (client and server)...
+- [35mevent[39m compiled client and server successfully in 3.1s (1285 modules)
+[?25h
