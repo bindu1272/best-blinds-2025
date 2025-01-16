@@ -17,7 +17,7 @@ export default function Home() {
         <div className="design_categories_section">
           <div className="container mx-auto">
             <h1 className="title">
-              Design is the way how you express your feelings
+              Design is the way how you express your feelings Hello world 123
             </h1>
             <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4">
               <Link href="/product/Blinds" className="categorie_img">
