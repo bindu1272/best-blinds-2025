@@ -5,7 +5,7 @@ import Footer from "./components/footer";
 import Script from 'next/script';
 export const metadata: Metadata = {
   title: "Blinds Warehouse Sydney ",
-  description: "Stylish & Durable Blinds Tailored Just for You by Blinds Warehouse Experts!",
+  description: "Stylish & Durable Blinds Tailored Just for You by Blinds Warehouse Experts! hello world",
 };
 
 export default function RootLayout({
