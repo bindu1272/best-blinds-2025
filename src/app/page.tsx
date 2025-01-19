@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import BookNow from "./components/BookNowBlock";
@@ -5,8 +6,21 @@ import Banner from "./components/Banner";
 import Testimonials from "./components/Testimonials";
 import MarqueeScroll from "./components/MarqueeScroll";
 import { Tooltip } from "antd";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
+  const [data, setData]:any = useState(null);
+
+  useEffect(() => {
+    async function fetchData() {
+      const res = await fetch(`${process.env.BACKEND_URL}/names`);
+      const result = await res.json();
+      setData(result);
+    }
+
+    fetchData();
+  }, []);
   const reasonablePrice = "we believe that quality shouldn't come at an unreasonable cost. Our blinds are crafted with precision and care, offering you exceptional value for money. We work directly with trusted manufacturers to cut out the middleman, ensuring you get the best possible price without compromising on quality. Whether you're looking for a simple design or something more luxurious, we have options to suit every budget";
   const bestDecorator = "Transform your home with our wide range of blinds, designed to enhance the aesthetics of any room. Our team of expert decorators will guide you in selecting the perfect blinds to complement your interior décor. With a keen eye for design and a passion for perfection, we ensure that each installation not only meets but exceeds your expectations. From modern minimalism to classic elegance, our decorators are here to bring your vision to life."
   const honestAdvice = "Choosing the right blinds for your home can be overwhelming, but it doesn't have to be. At Blinds Warehouse Sydney, we pride ourselves on providing honest, straightforward advice. Our knowledgeable team will help you navigate the different options, considering factors such as light control, privacy, and style. We prioritize your needs and preferences, ensuring that you make a well-informed decision that you'll be happy with for years to come."
@@ -17,7 +31,7 @@ export default function Home() {
         <div className="design_categories_section">
           <div className="container mx-auto">
             <h1 className="title">
-              Design is the way how you express your feelings Hello world blinds warehouse
+              Design is the way how you express your feelings Hello world blinds warehouse  {data?.map((item:any) => item).join(",")}
             </h1>
             <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4">
               <Link href="/product/Blinds" className="categorie_img">

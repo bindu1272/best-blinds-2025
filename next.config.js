@@ -7,6 +7,14 @@ const nextConfig = {
         // !! WARN !!
         ignoreBuildErrors: true,
     },
+    async rewrites() {
+        return [
+          {
+            source: '/api/:path*',
+            destination: `${process.env.BACKEND_URL}/:path*`, // Proxy to backend
+          },
+        ];
+      },
 }
 
 module.exports = nextConfig
